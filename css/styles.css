@@ -1,0 +1,764 @@
+/* make changes in styles.css, copy paste into https://madlittlemods.github.io/postcss-css-variables/playground/ to convert variables. Then copy into http://autoprefixer.github.io/ to support more browsers. Finally paste into style.production.css */
+
+:root {
+  /* colors */
+
+  --pea-green: #597b32;
+  --black: #000;
+  --grey: #615F53;
+  --dark-grey: #2e2b19;
+  --white: #fff;
+  --blue: #c7f1fd;
+  --pink: #eb1677;
+  --yellow: #faffbd;
+  --light-pink: #ffbad9;
+  --dark-blue: #3c577e;
+  --light-pink2: #ffbcda;
+  --green: #309d6a;
+  --blue-hero: #7fabfc;
+  --blue2-hero: #9ae5fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", "Arial";
+}
+
+h1,
+h2 {
+  letter-spacing: 0.04em;
+}
+
+p {
+  letter-spacing: 0.04em;
+  line-height: 150%;
+}
+
+.small-caps {
+  font-size: 15px;
+  letter-spacing: 0.07em;
+}
+
+button,
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid var(--white);
+  transition: 0.2s opacity;
+}
+
+.button1 {
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.button2 {
+  color: var(--black);
+  border: 2px solid var(--black);
+}
+
+.resume {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+}
+
+.button2:hover,
+.button2:focus,
+.myflix-link:hover,
+.myflix:link:focus,
+.meet-more:hover,
+.meet-more:focus {
+  cursor: pointer;
+  color: var(--pink);
+}
+
+.link:hover,
+.link:focus {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.pokemon-more:hover,
+.pokemon-more:focus,
+.chat-more:hover,
+.chat-more:focus,
+.button1:hover,
+.button1:focus,
+.resume:hover,
+.resume:focus {
+  cursor: pointer;
+  color: var(--light-pink);
+}
+
+.email:hover,
+.email:focus {
+  cursor: pointer;
+  border-bottom: 1px solid var(--pink);
+}
+
+/* HERO SECTION */
+
+#hero {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, var(--white), var(--blue2-hero), var(--blue-hero));
+}
+
+#hero > h1 {
+  font-size: 22px;
+}
+#hero > h2 {
+  font-size: 16px;
+}
+
+/* HERO animation */
+
+#hero > img {
+  position: absolute;
+  width: 140px;
+  top: 18%;
+  left: 20px;
+  border-radius: 30% 60%;
+  box-shadow: 10px 5px 10px var(--grey);
+  animation: easeIn 5.5s;
+}
+
+.social-media-hero {
+  padding: 3% 10% 0 0;
+  text-align: right;
+  animation: easeIn 5.5s;
+}
+
+.social-media-hero a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+.social-media-hero a:hover {
+  opacity: 0.6;
+}
+
+.social-icon-hero {
+  height: 26px;
+}
+
+.intro1,
+.intro2,
+.intro3,
+.intro4 {
+  position: absolute;
+  background-color: var(--pink);
+  box-shadow: 5px 2px 10px var(--grey);
+  color: var(--white);
+  border-radius: 10px 0 0 10px;
+  padding: 3px 6% 6px 20px;
+  right: 0%;
+}
+.intro1 {
+  top: -385px;
+  animation: falldown 2s forwards;
+}
+.intro2 {
+  top: -345px;
+  animation: falldown 2s forwards 0.8s;
+}
+.intro3 {
+  top: -305px;
+  animation: falldown 2s forwards 1.6s;
+}
+.intro4 {
+  top: -265px;
+  animation: falldown 2s forwards 2.4s;
+}
+
+.intro5,
+.learn-more {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.intro5 {
+  position: absolute;
+  animation: easeIn 7s;
+  bottom: 18%;
+  line-height: 150%;
+}
+.learn-more {
+  position: absolute;
+  background-color: var(--white);
+  color: var(--pea-green);
+  border: 1px solid var(--pea-green);
+  box-shadow: 5px 2px 10px var(--grey);
+  text-decoration: none;
+  padding: 3px 10px 6px 10px;
+  bottom: 6%;
+  width: 120px;
+  animation: easeIn 8s;
+}
+.learn-more:hover,
+.learn-more:focus {
+  color: var(--pink);
+  box-shadow: 8px 4px 15px var(--grey);
+  transition: 0.3s;
+}
+
+@keyframes falldown {
+  from{ transform: translateY(0px)}
+  to{ transform: translateY(560px)}
+}
+
+@keyframes easeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* HERO media queries */
+
+@media all and (min-width: 320px) {
+  #hero > img {
+    left: 35px;
+    width: 45%;
+  }
+}
+
+@media all and (min-width: 450px) {
+  #hero > img {
+    width: 52%;
+    top: 15%;
+  }
+  .intro1,
+  .intro2,
+  .intro3,
+  .intro4 {
+    padding-right: 10%; 
+  }
+  .intro1 {
+    top: -375px;
+  }
+  .intro2 {
+    top: -330px;
+  }
+  .intro3 {
+    top: -285px;
+  }
+  .intro4 {
+    top: -240px;
+  }
+}
+
+@media all and (min-width: 500px) {
+  #hero > h1.intro {
+    font-size: 26px;
+  }
+  
+  .learn-more {
+    font-size: 20px;
+    width: 140px;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .social-media-hero {
+    padding-top: 5%;
+  }
+  .social-media-hero a {
+    text-decoration: none;
+    padding: 8px;
+  }
+  
+  .social-icon-hero {
+    height: 32px;
+  }
+  #hero > img {
+    width: 300px;
+  }
+  .intro1 {
+    top: -275px;
+  }
+  .intro2 {
+    top: -220px;
+  }
+  .intro3 {
+    top: -165px;
+  }
+  .intro4 {
+    top: -110px;
+  }
+  .intro5 {
+    bottom: 20%;
+  }
+}
+
+@media all and (min-width: 660px) {
+  #hero > img {
+    left: 8%;
+  }
+  .intro1,
+  .intro2,
+  .intro3,
+  .intro4 {
+    padding-right: 15%; 
+  }
+}
+
+@media all and (min-width: 710px) {
+  #hero > h1.intro {
+    font-size: 30px;
+  }
+  .learn-more {
+    font-size: 26px;
+    width: 180px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  #hero > img {
+    left: 15%;
+  }
+}
+
+@media all and (min-width: 950px) {
+  #hero > img {
+    width: 350px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #hero > img {
+    left: 20%;
+  }
+  #hero > h1.intro {
+    font-size: 34px;
+  }
+  .learn-more {
+    font-size: 30px;
+    width: 200px;
+  }
+  .intro1 {
+    top: -275px;
+  }
+  .intro2 {
+    top: -220px;
+  }
+  .intro3 {
+    top: -165px;
+  }
+  .intro4 {
+    top: -110px;
+  }
+}
+@media all and (min-width: 1400px) {
+  #hero > img {
+    left: 25%;
+  }
+  #hero > h1.intro {
+    font-size: 42px;
+  }
+  .intro2 {
+    top: -210px;
+  }
+  .intro3 {
+    top: -145px;
+  }
+  .intro4 {
+    top: -80px;
+  }
+}
+
+@media all and (min-width:320px) and (max-width:820px) and (orientation:landscape) {
+  #hero > img {
+    width: 20%;
+  }
+  #hero > h1 {
+    font-size: 20px;
+  }
+  .intro1 {
+    top: -520px;
+  }
+  .intro2 {
+    top: -470px;
+  }
+  .intro3 {
+    top: -420px;
+  }
+  .intro4 {
+    top: -370px;
+  }
+  .intro5 {
+    bottom: 30%;
+  }
+  .learn-more {
+    bottom: 3%;
+  }
+}
+
+/* HYPERLINKS */
+
+.link-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 12px 0;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  background-color: var(--yellow);
+  z-index: 2;
+}
+
+@media all and (min-width: 450px) {
+  .link-container {
+    font-size: 20px;
+    padding: 12px 10%;
+  }
+}
+
+.link {
+  color: var(--pink);
+  text-decoration: none;
+}
+
+/* SKILLS section */
+
+.skills-section {
+  padding: 4% 8%;
+  background-color: var(--blue);
+  animation: easeIn 1.5s;
+}
+
+.hash:hover::after {
+  content: ' #';
+}
+
+
+/* list for skills (and tools on myFlix page) uses grid when supported */
+
+ul {
+  list-style-type: circle;
+}
+
+.skills {
+  display: inline-block;
+  width: 240px;
+ }
+
+ .skills li {
+  padding: 10px 40px 20px 0;
+}
+
+
+@supports (display: grid) {
+    
+  @media all and (min-width: 560px) {
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: auto;
+    }
+    
+  }
+  
+  @media all and (min-width: 820px) {
+    .skills {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  @media all and (min-width: 1000px) {
+    .skills {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+
+/* PROJECTS section */
+
+.projects-intro {
+  padding: 4% 8%;
+  background-color: var(--light-pink);
+  animation: easeIn 1.5s;
+}
+
+.project {
+  padding: 4% 8%;
+  animation: easeIn 1.5s;
+}
+
+.project1 {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.project2 {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.project3 {
+  background-color: var(--yellow);
+}
+
+.project4 {
+  background-color: var(--blue);
+}
+
+.project-image {
+  width: 100%;
+  border: 5px solid var(--white);
+  z-index: 1;
+}
+
+.project-image:hover,
+.project-image:focus {
+  transform: scale(1.01);
+  box-shadow: 10px 5px 10px var(--black);
+}
+
+/* project section with media queries */
+
+@media all and (min-width: 950px) {
+  .project {
+    display: flex;
+  }
+  .project__item {
+   width: 50%;
+   justify-content: space-between;
+  }
+  .project__item:last-child {
+    padding-left: 70px;
+  }
+  .project-section {
+    padding-bottom: 60px;
+  }
+}
+
+/* show more, show less - see js/scripts.js for function */
+
+.hidden-info {
+  display: none;
+}
+
+.hidden-info.isVisible {
+  display: block;
+}
+
+.myflix-link {
+  color: var(--light-pink);
+  text-decoration: none;
+  text-shadow: 1px 1px 3px var(--black);
+}
+
+.meet-more {
+  color: var(--light-pink);
+  display: inline-block;
+  text-shadow: 1px 1px 3px var(--black);
+  margin: 0;
+}
+
+.pokemon-more {
+  color: var(--pink);
+  display: inline-block;
+  text-shadow: 1px 1px var(--grey);
+  margin: 0;
+}
+
+.chat-more {
+  color: var(--pink);
+  display: inline-block;
+  text-shadow: 1px 1px var(--grey);
+  margin: 0;
+}
+
+/* ABOUT section */
+
+.about {
+  padding: 4% 8%;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.about-title {
+  padding-bottom: 30px;
+}
+
+.about > img {
+  float: left;
+  margin: 6px 60px 40px 0;
+  width: 40%;
+  box-shadow: 5px 2px 10px var(--grey);
+}
+
+/* contact section */
+
+.contact-container {
+  padding: 4% 8% 8% 8%;
+  background-color: var(--light-pink);
+}
+
+.email {
+  border-bottom: 2px solid var(--red);
+  font-size: 18px;
+}
+
+/* Footer */
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--yellow);
+}
+
+.page-footer__text {
+  margin: 3px;
+}
+
+.social-media {
+  padding: 15px 0;
+}
+
+.social-media a {
+  text-decoration: none;
+  padding: 8px;
+}
+
+.social-media a:hover {
+  opacity: 0.6;
+}
+
+.social-icon {
+  height: 36px;
+}
+
+@media all and (min-width: 570px) {
+  .social-icon {
+    height: 50px;
+  }
+  .social-media a {
+    padding: 15px;
+  }
+}
+
+/* OTHER PAGES START HERE */
+
+/* myFlix.html file */
+
+#overview-section {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 4% 8%;
+}
+
+.tools-section {
+  background-color: var(--blue);
+  color: var(--black);
+  padding: 4% 8%;
+}
+
+.lessons-section {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 4% 8%;
+} 
+
+.case-study__title {
+  padding: 70px 0;
+  font-size: 40px;
+  letter-spacing: 0.07em;
+  color: var(--light-pink);
+}
+
+.myflix-links {
+  color: var(--light-pink);
+  text-align: center;
+}
+
+.overview-project {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+  align-items: center;
+}
+.overview-project__item {
+ width: 50%;
+ justify-content: space-between;
+}
+
+.overview-project__item:first-child {
+  padding-right: 30px;
+}
+.overview-project__item:last-child {
+  padding-left: 30px;
+}
+
+
+.overview-project__image {
+  width: 100%;
+  border: 5px solid var(--white);
+}
+
+.overview-text {
+  padding-bottom: 50px;
+}
+
+.code {
+  color: var(--red);
+  font-size: 20px;
+}
+
+.back-to-main {
+  padding: 5px;
+  font-size: 18px;
+  position: fixed;
+  right: 10px;
+  background: var(--blue);
+  border: 3px solid var(--dark-blue);
+  border-radius: 30px;
+}
+
+@media all and (min-width: 420px) {
+  .back-to-main {
+    right: 50px;
+    padding: 15px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .overview-project {
+    flex-direction: column;
+  }
+  .overview-project__item {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .overview-project__item:first-child {
+    padding-right: 0;
+  }
+  .overview-project__item:last-child {
+    padding-left: 0;
+  }
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+  .overview-project__image:hover {
+    transform: scale(1);
+  }
+}

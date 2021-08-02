@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Andrew Stratton - Web Development Profile</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- MAIN section -->
+    <section id="overview-section">
+
+      <a href="index.html" class="link back-to-main">
+        << back</a>
+
+          <h1 class="case-study__title hash">MyFlix80s</h1>
+
+          <section class="overview-text">
+            <h2>Overview</h2>
+            <p>
+              This app initially loads a login screen where the user can either login their details or go to a
+              registration page to set up a new account. Once logged in, the main page displays
+              film cards which the user can explore.
+            </p>
+          </section>
+
+          <section class="overview-project">
+            <div class="overview-project__item">
+              <img src="img/login.png" class="overview-project__image" alt="Photo of MyFlix80s Login View" />
+            </div>
+            <div class="overview-project__item">
+              <img src="img/main-view.png" class="overview-project__image" alt="Photo of MyFlix80s Main View" />
+            </div>
+          </section>
+
+          <section class="overview-text">
+            <p>
+              Users can choose to navigate to pages to read about each film, see details about
+              genres and find out about the directors of the '80s era. They can also add films to a
+              list of their favourites.
+            </p>
+            <p>
+              From the naviagtion bar, users can view their profile details, where there's the option
+              to update and delete their profile.
+            </p>
+          </section>
+
+          <section class="overview-project">
+            <div class="overview-project__item">
+              <img src="img/movie-view.png" class="overview-project__image" alt="Photo of MyFlix80s Movie Card View" />
+            </div>
+            <div class="overview-project__item">
+              <img src="img/profile-view.png" class="overview-project__image" alt="Photo of MyFlix80s Profile View" />
+            </div>
+          </section>
+
+    </section>
+
+    <section class="tools-section">
+
+      <section class="overview-text">
+        <h2>Tools Used</h2>
+        <p>
+          This app was built using the <span class="small-caps">MERN</span> stack:
+        </p>
+        <ul class="skills">
+          <li>mongodb</li>
+          <li>express</li>
+          <li>react</li>
+          <li>node.js</li>
+        </ul>
+
+        <p>
+          It was split into two main projects - the back and front-end, which work together to bring the data
+          through to visually experience the app.
+        </p>
+      </section>
+
+      <section class="overview-project column-reverse">
+        <div class="overview-project__item">
+          <img src="img/api-code.png" class="overview-project__image" alt="Photo of API code" />
+        </div>
+        <div class="overview-project__item">
+          <h2>Back-End Development</h2>
+          <p>
+            The first part of the project involved developing a <span class="small-caps">REST</span>ful
+            <span class="small-caps">API</span>
+            and creating a <span class="small-caps">NoSQL</span> database. The <span class="small-caps">API</span>
+            contains the logic for accessing
+            both the data about each film and allowing users to create a secure, personal account.
+          <p>
+            Feel free to view the code for the
+            <a href="https://github.com/Adstrat/myFlix80s" class="link" target="_blank">myFlix80s <span
+                class="small-caps">API</span></a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="overview-text">
+        <h2>User Authentication</h2>
+        <p>
+          The user authentication process was the trickiest part of this project.
+          Working on the back-end taught me a lot about the logic needed to maintain high standards
+          of security. And the front-end required a lot of thought to implement effective error handling.
+        </p>
+      </section>
+
+      <section class="overview-project">
+        <div class="overview-project__item">
+          <h2>Front-End Development</h2>
+          <p>
+            For the user interface I used <span class="small-caps">REACT</span>.
+          </p>
+          <p>
+            User Flow Diagrams helped me to map out how to arrange the props and states
+            for each view.
+          </p>
+          <p>
+            Reusable components were taken from React Bootstrap.
+          </p>
+        </div>
+
+        <div class="overview-project__item">
+          <img src="img/user-flow.png" class="overview-project__image" alt="Photo of User Flow Diagram" />
+        </div>
+      </section>
+
+    </section>
+
+    <section class="lessons-section">
+
+      <h2>Lessons Learned</h2>
+      <p>
+        While I feel more confident with front-end development, I enjoyed developing the <span
+          class="small-caps">API</span> and creating a
+        database and would like to expand these skills in future projects.
+      </p>
+      <p>
+        This project helped to solidify my React knowledge, such as using hooks and updating the states.
+        At the end I successfully changed some of the states to be managed with Redux, just for practice. I feel
+        this is something I'd like to explore more as it's important when working on bigger projects.
+      </p>
+      <p>
+        I enjoyed working the most on the User Interface. Playing around with the <span class="small-caps">CSS</span>
+        to see how different elements respond. This is a particular area that I intend to extend and explore as I
+        continue on my web development journey.
+      </p>
+
+      <br> <br>
+
+      <div class="myflix-links">
+        <h2>
+          Links to Project
+        </h2>
+        <div>
+          <a href="https://github.com/Adstrat/myFlix80s-client" class="button button1" target="blank">Code</a>
+          <a href="https://myflix80s.netlify.app/" class="button button1" target="blank">Live</a>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+    </section>
+
+    <br>
+
+    <section class="contact-container">
+      <h1 id="contact">
+        Let's Build Something Together
+      </h1>
+      <p>
+        Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+      </p>
+      <a href="mailto:andystratton78@gmail.com?subject=Web%20Development%20Opportunties" class="link email"
+        target="_blank">andystratton78@gmail.com</a>
+    </section>
+
+    <br>
+
+    <!-- FOOTER section -->
+
+    <footer class="page-footer">
+      <div class="social-media">
+        <br />
+        <a href="https://github.com/Adstrat" target="_blank">
+          <img src="img/github_icon.svg" alt="Github" class="social-icon" />
+        </a>
+        <a href="mailto:stratton.webdev@gmail.com?subject=Web%20Development%20Opportunties" target="_blank">
+          <img src="img/email_icon.svg" alt="Email" class="social-icon" />
+        </a>
+        <a href="https://linkedin.com/in/adstratton" target="_blank">
+          <img src="img/linkedin_icon.svg" alt="LinkedIn" class="social-icon" />
+        </a>
+        <a href="https://medium.com/@andystratton78" target="_blank">
+          <img src="img/medium_icon.svg" alt="Medium" class="social-icon" />
+        </a>
+        <a href="https://twitter.com/StrattonWebdev" target="_blank">
+          <img src="img/twitter_icon.svg" alt="Twitter" class="social-icon" />
+        </a>
+      </div>
+
+      <p class="page-footer__text">&copy; Copyright 2021</p>
+      <p class="page-footer__text">Designed and developed by Andrew Stratton</p>
+      <br>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+
+</html>
