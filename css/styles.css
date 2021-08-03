@@ -530,6 +530,7 @@ ul {
 @media all and (min-width: 950px) {
   .project {
     display: flex;
+    padding: 6% 8%;
   }
   .project__item {
    width: 50%;
@@ -589,7 +590,7 @@ ul {
 }
 
 .about-title {
-  padding-bottom: 30px;
+  padding-bottom: 4%;
 }
 
 .about > img {
