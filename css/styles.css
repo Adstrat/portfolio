@@ -131,6 +131,14 @@ button,
   border-radius: 60% 30%;
 }
 
+.intro1:hover,
+.intro2:hover,
+.intro3:hover,
+.intro4:hover {
+  color: var(--green);
+  background-color: var(--yellow);
+}
+
 .social-media-hero {
   padding: 3% 10% 0 0;
   text-align: right;
