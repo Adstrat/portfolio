@@ -127,7 +127,8 @@ button,
   transition: border-radius 4s;
 }
 
-#hero > img:hover {
+#hero > img:hover,
+#hero > img:focus {
   border-radius: 60% 30%;
 }
 
@@ -135,7 +136,7 @@ button,
 .intro2:hover,
 .intro3:hover,
 .intro4:hover {
-  color: var(--green);
+  color: var(--pink);
   background-color: var(--yellow);
 }
 
@@ -203,9 +204,9 @@ button,
 }
 .learn-more {
   position: absolute;
-  background-color: var(--white);
-  color: var(--pea-green);
-  border: 1px solid var(--pea-green);
+  background-color: var(--pink);
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
   box-shadow: 5px 2px 10px var(--grey);
   text-decoration: none;
   padding: 6px 10px 6px 10px;
@@ -215,9 +216,9 @@ button,
 }
 .learn-more:hover,
 .learn-more:focus {
-  color: var(--pink);
-  box-shadow: 8px 4px 15px var(--grey);
-  transition: 0.3s;
+  box-shadow: 8px 4px 20px var(--grey);
+  bottom: 7%;
+  transition: 0.5s;
 }
 
 @keyframes falldown {
