@@ -786,4 +786,5 @@ ul {
   display: block;
   margin: 0 auto;
   padding-top: 50px;
+  max-width: 100%;
 }
