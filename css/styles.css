@@ -69,7 +69,7 @@ button,
 .button2:hover,
 .button2:focus,
 .myflix-link:hover,
-.myflix:link:focus,
+.myflix-link:focus,
 .meet-more:hover,
 .meet-more:focus {
   cursor: pointer;
@@ -515,12 +515,12 @@ ul {
 }
 
 .project2 {
-  background-color: var(--green);
-  color: var(--white);
+  background-color: var(--yellow);
 }
 
 .project3 {
-  background-color: var(--yellow);
+  background-color: var(--green);
+  color: var(--white);
 }
 
 .project4 {
@@ -583,9 +583,8 @@ ul {
 
 .pokemon-more {
   color: var(--pink);
-  display: inline-block;
+  text-decoration: none;
   text-shadow: 1px 1px var(--grey);
-  margin: 0;
 }
 
 .chat-more {
@@ -679,7 +678,7 @@ ul {
 
 /* OTHER PAGES START HERE */
 
-/* myFlix.html file */
+/* myFlix.html + pokemon.html file */
 
 #overview-section {
   background-color: var(--dark-blue);
@@ -781,4 +780,10 @@ ul {
   .overview-project__image:hover {
     transform: scale(1);
   }
+}
+
+.pokemon-gif {
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
 }
