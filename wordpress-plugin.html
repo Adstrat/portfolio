@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Andrew Stratton - Web Development Profile</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- MAIN section -->
+    <section id="overview-section">
+
+      <a href="index.html#wordpress-plugin" class="link back-to-main">
+        << back</a>
+
+          <h1 class="case-study__title hash">WordPress Plugin</h1>
+
+
+
+          <section class="overview-project">
+            <div class="overview-project__item">
+              <h2>Project Brief</h2>
+              <p>
+                In this project for Proveg I was given a prototype design in Figma and asked to develop a component
+                which displays various information about employees in different countries.
+              </p>
+              <p>
+                I was tasked to develop this as a wordPress plugin which could be added to the website as a block
+                in the Gutenberg block editor.
+              </p>
+            </div>
+            <div class="overview-project__item">
+              <img src="img/wordpress-plugin/figma-design.png" class="overview-project__image"
+                alt="Photo of Figma Prototype" />
+            </div>
+          </section>
+
+          <section class="overview-text">
+            <p>
+              The first decision I made was to create a seperate Employees Custom Post.
+            </p>
+            <p>
+              Rather than users adding
+              the employee data directly into the block, I felt it would be better to seperate the data into a custom
+              post so that it could be reused for additional blocks and in other areas of the website.
+            </p>
+            <p>
+              I decided that the best way to do this was by using Advanced Custom Fields.
+            </p>
+            </div>
+            <img src="img/wordpress-plugin/wordpress-plugin.gif" class="pokemon-gif"
+              alt="Gif animation of Pokemon Game">
+          </section>
+
+    </section>
+
+    <section class="tools-section">
+
+      <section class="overview-text">
+        <h2>Tools Used</h2>
+        <ul class="skills">
+          <li>WordPress API</li>
+          <li>PHP</li>
+          <li>REACT</li>
+          <li>Advance Custom Fields</li>
+        </ul>
+        <p>
+          The development of this plugin required <span class="small-caps">PHP</span> to register and enqueue the styles
+          and scripts to WordPress,
+          and <span class="small-caps">REACT</span> for the actual functionality.
+        </p>
+        <p>
+          The data was pulled from the wordPress <span class="small-caps">REST API</span> using the getEntityRecords
+          selector on the backend
+          and the classic fetch method on the frontend.
+        </p>
+      </section>
+
+
+    </section>
+
+    <section class="lessons-section">
+      <h2>Lessons Learned</h2>
+      <p>
+        Having completed other simpler projects at ProVeg, focusing on applying <span class="small-caps">PHP</span>,
+        Advanced Custom Fields and <span class="small-caps">SCSS</span>,
+        I was keen to try to build something a little more in depth. Developing a plugin using my skills in <span
+          class="small-caps">REACT</span> felt like the perfect challenge.
+      </p>
+      <p>
+        I first followed some tutorials and made a plugin for a Gutenburg <a
+          href="https://github.com/Adstrat/wordpress-quiz-plugin" class="proveg" target="blank">Quiz</a> custom block.
+        This used a slightly different approach as the data was input in the actual block itself, rather than seperated
+        into a Custom Post. It took a little research, but I managed to figure out how to use getEntityRecords to
+        display
+        images using the repeater field type in Advanced Custom Fields.
+      </p>
+      <p>
+        The main take out from this project for me was figuring out how to use <span class="small-caps">REACT</span>
+        to move through the list of countries and display the data accordingly. From undertaking this project I had
+        another chance to keep improving my javaScript problem solving skills.
+      </p>
+
+      <br> <br>
+
+      <div class="myflix-links">
+        <h2>
+          Link to Project
+        </h2>
+        <div>
+          <a href="https://github.com/Adstrat/wp-employees-customblockt" class="button button1" target="blank">Code</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <br>
+
+    <section class="contact-container">
+      <h1 id="contact">
+        Let's Build Something Together
+      </h1>
+      <p>
+        Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+      </p>
+      <a href="mailto:stratton.webdev@gmail.com?subject=Web%20Development%20Opportunties" class="link email"
+        target="_blank">stratton.webdev@gmail.com</a>
+    </section>
+
+    <br>
+
+    <!-- FOOTER section -->
+
+    <footer class="page-footer">
+      <div class="social-media">
+        <br />
+        <a href="https://github.com/Adstrat" target="_blank">
+          <img src="img/github_icon.svg" alt="Github" class="social-icon" />
+        </a>
+        <a href="mailto:stratton.webdev@gmail.com?subject=Web%20Development%20Opportunties" target="_blank">
+          <img src="img/email_icon.svg" alt="Email" class="social-icon" />
+        </a>
+        <a href="https://linkedin.com/in/adstratton" target="_blank">
+          <img src="img/linkedin_icon.svg" alt="LinkedIn" class="social-icon" />
+        </a>
+        <a href="https://medium.com/@andystratton78" target="_blank">
+          <img src="img/medium_icon.svg" alt="Medium" class="social-icon" />
+        </a>
+        <a href="https://twitter.com/StrattonWebdev" target="_blank">
+          <img src="img/twitter_icon.svg" alt="Twitter" class="social-icon" />
+        </a>
+      </div>
+
+      <p class="page-footer__text">&copy; Copyright 2021</p>
+      <p class="page-footer__text">Designed and developed by Andrew Stratton</p>
+      <br>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+
+</html>
